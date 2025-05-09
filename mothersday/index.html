@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especial Dia das Mães</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a2e, #0f3460);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff4b5c, #ff0062);
+            padding: 30px;
+            font-size: 2em;
+            font-weight: bold;
+            border-bottom: 4px solid #ff0062;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+        }
+
+        .game-area {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .flower {
+            font-size: 32px;
+            padding: 15px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .flower:hover {
+            transform: scale(1.3);
+        }
+
+        .message {
+            font-size: 1.3em;
+            margin-top: 15px;
+            display: none;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Estilização do footer */
+        footer {
+            background: linear-gradient(135deg, #ff4b5c, #ff0062);
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 1em;
+            box-shadow: 0px -4px 10px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>🌸 Especial Dia das Mães 🌸</header>
+
+    <section class="container">
+        <h2>História do Dia das Mães</h2>
+        <p>O Dia das Mães é celebrado em muitos países para homenagear o amor materno e o impacto das mães na sociedade.</p>
+    </section>
+
+    <section class="container">
+        <h2>Curiosidade</h2>
+        <p>No Brasil, a data é comemorada no segundo domingo de maio.</p>
+    </section>
+
+    <section class="container">
+        <h2>Mini Jogo: Clique nas Flores!</h2>
+        <p>Clique em cada flor para revelar uma mensagem especial! 🌷✨</p>
+        <div class="game-area">
+            <script>
+                const messages = [
+                    "Seu amor ilumina minha vida! ❤️",
+                    "Você é minha inspiração! 💖",
+                    "Cada abraço seu aquece minha alma! 🤗",
+                    "Obrigado por tudo, mamãe! 🌟",
+                    "Te amo infinitamente, minha rainha! 👑",
+                    "Cada dia ao seu lado é um presente! 🎁",
+                    "Você transforma o mundo com seu carinho! 🌏",
+                    "Sou grato por cada sorriso seu! 😊",
+                    "Seu carinho é o melhor refúgio! 🏡",
+                    "Você merece tudo de bom no mundo! ✨",
+                    "Mãe, você é uma estrela brilhante! ⭐",
+                    "A melhor mãe que alguém pode ter! 💕",
+                    "Seu amor é meu maior tesouro! 💎",
+                    "Nada no mundo se compara ao seu carinho! 🥰",
+                    "Você é simplesmente incrível! 🚀",
+                    "Obrigado por ser minha guia na vida! 🧭",
+                    "Seu coração é puro e lindo! 🌹",
+                    "Seu amor me faz forte! 💪",
+                    "Sou sortudo por ter você como mãe! 🍀",
+                    "Obrigado por todas as lições que me ensinou! 📚",
+                    "Você é a luz que guia meu caminho! 🔥",
+                    "Cada momento ao seu lado é precioso! ⏳",
+                    "Você é a essência do amor verdadeiro! 💗",
+                    "Mãe, você é meu porto seguro! ⚓",
+                    "Te amo para sempre, mamãe! 🌺"
+                ];
+
+                for (let i = 0; i < messages.length; i++) {
+                    document.write(`<button class="flower" onclick="document.getElementById('message-${i}').style.display = 'block'">🌸</button>`);
+                    document.write(`<p id="message-${i}" class="message">${messages[i]}</p>`);
+                }
+            </script>
+        </div>
+    </section>
+
+<footer>
+        <p>&copy; 2025 Dia das Mães - Criado por Andrew Augusto Lagais Cruz</p>
+        <p>Versão 1.0 | Feito com 💖 e JavaScript</p>
+    <p>Criado pelos alunos do Curso Técnico de Informática para Internet da EE Interventor "Júlio de Carvalho"</p></footer>
+
+</body>
+</html>
